@@ -12,7 +12,7 @@ Capybara::Angular.default_max_wait_time = 10
 feature 'Waiting for angular' do
   include Capybara::Angular::DSL
 
-  scenario 'when manually bootstrapping an angular application' do
+  scenario 'when manually bootstrapping an angular application with data-angular-app identifier' do
     open_manual_bootstrap_page
     timeout_page_should_have_waited
   end
